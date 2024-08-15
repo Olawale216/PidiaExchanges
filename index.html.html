@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIDIA exchange</title>
+    
+
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.black {
+    background: black;
+}
+
+img {
+    width: 30%;
+}
+
+.navbar1 {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    padding: 14px 16px;
+}
+
+.logo {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: orange;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.open-slide {
+    display: none; /* Hide slide menu trigger on larger screens */
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display: block;
+    transition: 0.5s;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+}
+.trade-btn{
+  text-decoration:none;
+  background:orange;
+  font-size:1.2rem;
+  color: white;
+  padding:15px;
+  margin-top:4px;
+  border-radius:6px;
+}
+.about, .services, .hero, .main {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.contact{
+    padding: 12px;
+    background: black;
+    color: #fff;
+}
+
+
+.contact a{
+  text-decoration:none;
+}
+
+footer{
+  text-align: center;
+  background: grey;
+ width: 100%;
+ left:0;
+ bottom:0;
+ padding: 10px 0;
+ color: white;
+}
+
+h1{
+  color:white;
+}
+
+.border{
+  border:1px solid white;
+  border-radius:8px;
+  padding: 10px;
+}
+
+.border img{
+  width:7%;
+  border-radius:10px;
+ 
+}
+
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Hide the navbar links on smaller screens */
+    }
+
+    .open-slide {
+        display: block; /* Show slide menu trigger on smaller screens */
+    }
+}
+
+@media (max-width: 431px) {
+    .nav-bar-nav {
+        display: none;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="black">
+        <header>
+            <div class="navbar1">
+                <a href="#" class="logo">PIDIA Exchange</a>
+                <nav class="navbar">
+                    <span class="open-slide">
+                        <a href="#" onclick="openSlideMenu()">
+                            <svg width="30" height="30">
+                                <path d="M0,5 H30" stroke="#fff" stroke-width="5"/>
+                                <path d="M0,14 H30" stroke="#fff" stroke-width="5"/>
+                                <path d="M0,23 H30" stroke="#fff" stroke-width="5"/>
+                            </svg>
+                        </a>
+                    </span>
+                    <ul class="nav-bar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div id="side-menu" class="side-nav">
+                    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="hero">
+                <h1>Trade Gift Cards and Cryptocurrency for a Quick Cash</h1>
+                <a href="#" class="trade-btn" id="trade-btn">Trade Now</a>
+            </section>
+            <img src="gift_card_1.2c4edde5.png">
+        </main>
+    </div>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <img src="gift_card_2.37b821ba.png">
+        <p>I'm Okeke promise chimaobi, a passionate cryptocurrency trader and enthusiast dedicated to navigating the ever-evolving world of digital assets...</p>
+        <img src="transaction.dd1c2091.png">
+        <img src="rocket.01cac107.png">
+    </section>
+
+    <section class="services" id="services">
+        <h2>Cryptocurrency Variety</h2>
+        <p>Explore a diverse range of cryptocurrencies beyond Bitcoin, offering you flexibility in your investment portfolio.</p>
+        <p>I trade all types of cryptocurrencies.</p>
+        <img src="giftcard.80c11a91.png">
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <div class="border">
+        <p>We would love to hear from you.</p>
+        <p>Phone Number: +2348083477320</p>
+       
+        <p>Office address: Umuegbu, Nnobi Anambra State, Nigeria Local Government Area: Idemili South District/Area: Nnobi...</p>
+        <p>You can also reach us on <a href="https://www.instagram.com/pidia_groups?igsh=eHA0enM1dHUyMmg1"><img src="/images (5).jpeg" alt="instagram"></a> and <a href="https://x.com/Pidia_pon?t=gs5GuDIUTPcgUN3EvXl6Kw&s=09"><img src="/images.png" alt="X"></a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>PIDIA Exchange &copy; 2024.</p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('trade-btn');
+        button.addEventListener('click', function() {
+            const phoneNumber = '2348083477320';
+            const message = 'Hi I want to trade___';
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.location.href = url;
+        });
+
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+        }
+    </script>
+</body>
+    </div>
+</body>
+</html>
