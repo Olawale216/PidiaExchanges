@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    padding-left: 30px;
+}
+
+header{
+    text-align: center;
+    background: grey;
+padding: 2em 0;
+color: white;
+}
+
+
+
+.columns{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ ul{
+   list-style-type: none;
+
+}
+
+ li{
+   margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+#general{
+    background: rgb(221, 24, 221);
+    text-align: center;
+    width: 200px;
+    height: 40px;
+padding-top: 4px;
+border-radius: 10px;
+
+}
+
+#general a{
+    color: white;
+    
+}
+
+#business{
+    background:blue;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+padding-top: 4px;
+border-radius: 10px;
+
+}
+
+#business a{
+    color: white;
+    
+}
+
+
+#Sports{
+    background: lightgreen;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+padding-top: 4px;
+border-radius: 10px;
+
+}
+
+#Sports a{
+    color: white;
+    
+}
+
+
+#science{
+    background: lightcoral;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+padding-top: 4px;
+border-radius: 10px;
+
+}
+
+#science a{
+    color: white;
+    
+}
+
+
+#tech{
+    background: lightseagreen;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+padding-top: 4px;
+border-radius: 10px;
+
+}
+
+#tech a{
+    color: white;
+    
+}
+
+
+#health{
+    background:red;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+padding-top: 4px;
+border-radius: 10px;
+
+}
+
+#health a{
+    color: white;
+    
+}
+
+
+#Entertain{
+    background: rgb(255, 189, 7);
+    text-align: center;
+    width: 200px;
+    height: 40px;
+padding-top: 4px;
+border-radius: 10px;
+
+}
+
+#Entertain a{
+    color: white;
+    
+}

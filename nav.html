@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Button with Stroke</title>
+
+  <style>
+    /* Styling the navigation button */
+    .nav-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 18px;
+      color: black;
+      text-decoration: none;
+      border: 2px solid black; /* Stroke/outline effect */
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Hover effect */
+    .nav-button:hover {
+      background-color: black;
+      color: white;
+    }
+
+    /* Centering the button */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation button -->
+  <a href="https://example.com" class="nav-button">Go to Example</a>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center Image with Flexbox</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center; /* Horizontally center */
+      align-items: center;    /* Vertically center */
+      height: 100vh;          /* Full viewport height */
+      margin: 0;              /* Remove default margin */
+      background-color: #f0f0f0;
+    }
+    img {
+      max-width: 100%;
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+  <img src="https://via.placeholder.com/150" alt="Centered Image">
+</body>
+</html>
