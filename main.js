@@ -3,13 +3,15 @@
 
 const apikey = 'fdea17a5cd69425dbca772afe260f452';
 const everything = document.getElementById('container');
-const p=document.getElementById('failed')
+const p = document.getElementById('failed');
 
 fetchdata();
 
 async function fetchdata() {
   try {
-    const response = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${apikey}`);
+    const response = await fetch(
+      `https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?country=us&apiKey=${apikey}`
+    );
 
     if (!response.ok) {
       throw new Error("Could not fetch resources");
@@ -35,7 +37,6 @@ async function fetchdata() {
       const link = document.createElement('a');
       link.href = article.url;
       link.textContent = "Read more";
-    
 
       div.append(image, title, description, link);
       everything.append(div);
@@ -43,6 +44,6 @@ async function fetchdata() {
 
   } catch (error) {
     console.error(error);
-    p.textContent=error;
+    p.textContent = error.message;
   }
 }
